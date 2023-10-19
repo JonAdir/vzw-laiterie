@@ -16,32 +16,6 @@ body{
 }
 
 
-/* Header Image */
-.center-image {
-    /* Add any styling for the center image here */
-    position: fixed;
-    list-style: none; /* Remove the marker for the list item */
-    margin-left: 15vw;
-    background-color: black;
-    width: 11vw; /* Adjust the width as needed */
-    height: auto;
-    z-index: 1001;
-    
-    border-bottom-right-radius: 45px;
-    border-bottom-left-radius: 45px;
-}
-
-.center-image:hover {
-    padding-top: 1vw;
-    background-color: rgb(128,128,128, 0.9);
-}
-
-
-.center-image img {
-    width: 11vw; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
-}
-
 header {
     background-image: url("../content/pictures/BackgroundPicture-2.jpg");
     background-repeat: no-repeat;
