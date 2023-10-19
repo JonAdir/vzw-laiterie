@@ -1,0 +1,270 @@
+/* padding binnen
+margin buiten */
+
+/* vw -> width
+vh -> height */
+
+/* midjourneyai.ai */
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y:auto;
+    overflow-x: hidden;
+    background: rgba(41, 47, 51);
+}
+
+
+/* Header Image */
+.center-image {
+    /* Add any styling for the center image here */
+    position: fixed;
+    list-style: none; /* Remove the marker for the list item */
+    margin-left: 15vw;
+    background-color: black;
+    width: 11vw; /* Adjust the width as needed */
+    height: auto;
+    z-index: 1001;
+    
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+.center-image:hover {
+    padding-top: 1vw;
+    background-color: rgb(128,128,128, 0.9);
+}
+
+
+.center-image img {
+    width: 11vw; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+header {
+    background-image: url("../content/pictures/BackgroundPicture-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-bottom: -0.4vw;
+    width: 100%;
+
+    position: fixed;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    
+    
+}
+
+/* navigatie */
+.class-nav{
+    display: flex; /* Use flexbox to control layout */
+    background-color: rgba(41, 47, 51, 0.5);
+    width: 100%;
+    height: 2.5vw;
+    justify-content: space-between; /* Push the children to opposite sides */
+    align-items: center; /* Vertically center the children */
+    padding: 0.5em; /* Add padding as needed */
+    margin-bottom: 60vh;
+
+}
+
+nav{
+    display: flex;
+    margin-right: 15vw;
+    margin-left: 17vw;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Spread navigation links across the full width */
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    background-color: rgba(41, 47, 51, 0.9);
+    margin-right: 10px; /* Add margin between list items except for the last one */
+    padding: 10px;
+    height: 2vw;
+    padding-top: 2vw;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+nav ul li:hover {
+    background-color: gray;
+    height: 2.5vw;
+    padding-top: 2.5vw;
+}
+
+nav ul li:first-child {
+    margin-right: 20vw; /* Remove padding for the last list item */
+    border-right: none; /* Remove border for the last list item */
+    visibility: hidden;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 1.3vw;
+    text-decoration: none;
+    font-family: "Raleway", Helvetica, sans-serif;
+}
+
+/* Language */
+.class-language {
+    width: 7vw;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.class-language img {
+    width: 2vw;
+    height: auto;
+}
+
+/* Socials */
+
+
+
+
+
+/* Main */
+/* Section 1 */
+main {
+    display: block;
+    text-align: center;
+    height: 250vh;
+    padding-top: 70vh;
+
+    position: relative;
+    z-index: 1001;
+}
+  
+main .section1 {
+    padding-top: 2vw;
+    background-color: rgba(41, 47, 51);
+    margin: auto;
+    width: 100%;
+}
+  
+main .section1 h2 {
+    color: white;
+    font-size: 3.5vw; /* Adjust the font size as needed */
+    margin: 5px 0;
+    margin-bottom: 3vw;
+}
+  
+main .section1 p {
+    color: white;
+    font-size: 16px; /* Adjust the font size as needed */
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-size: 1vw;
+    font-family: "Raleway", Helvetica, sans-serif;
+}
+  
+main .section1 button {
+    background-color: red;
+    margin-top: 20px; /* Adjust the margin as needed */
+    margin-bottom: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-radius: 5px;
+}
+
+main .section1 button a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-family: "Raleway", Helvetica, sans-serif;
+}
+  
+
+/* Section 2 */
+  
+main .section2 {
+    background-color: rgba(41, 47, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vw;
+    margin-top: -15vh;
+    padding-bottom: 5vw;
+}
+
+main .section2 .class-section2-div1 {
+    width: 48%;
+    margin-left: 20vw;
+    padding-top: 5vw;
+    padding-right: 10vw;
+}
+
+main .section2 .class-section2-div2 {
+    width: 48%;
+    margin-left: 0vw;
+}
+  
+main .section2 h3 {
+    color: white;
+    font-size: 2.5vw;
+    text-align: left;
+    font-family: "Raleway", Helvetica, sans-serif;
+}
+  
+main .section2 h4 {
+    color: white;
+    font-size: 1.5vw;
+    text-align: left;
+    font-family: "Raleway", Helvetica, sans-serif;
+}
+  
+main .section2 p {
+    color: white;
+    font-size: 1vw;
+    text-align: left;
+    font-family: "Raleway", Helvetica, sans-serif;
+}
+
+.class-section2-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -10vw 00;
+}
+
+/* Section 3 */
+main .section3 {
+    background: rgb(255, 255, 255, 0.5);
+    height: 40vw;
+    margin-top: -10vw;
+}
+
+main .section3 .class-section3-div1{
+    padding-top: 5vw;
+    height: 30vw;
+}
+
+main .section3 .class-section3-div1{
+    background: rgb(255, 255, 255);
+}
+
+
+
+
+/* Footer */
+footer{
+    background-color: yellow;
+}
