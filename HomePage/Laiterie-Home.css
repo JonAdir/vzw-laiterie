@@ -1,3 +1,5 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
 /* padding binnen
 margin buiten */
 
@@ -10,30 +12,94 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-y:auto;
+    overflow-y: auto;
     overflow-x: hidden;
     background: rgba(41, 47, 51);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 
 header {
-    background-image: url("../content/pictures/BackgroundPicture-2.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../Content/Pictures/banner_laiterie_2008.jpg");
+    background-repeat: repeat-y;
     background-position: center;
     background-size: 100%;
-    margin-bottom: -0.4vw;
     width: 100%;
 
     position: fixed;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     
     
 }
 
+/* navigatie Contact */
+.class-contact{
+    background-color: rgb(247, 247, 247);
+    height: 5vw;
+    padding-left: 75vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-contact nav {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5vw;
+}
+
+.class-contact button {
+    list-style: none;
+    margin-bottom: 1.5vw;
+    background-color: yellow;
+    border: none;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.class-contact button a {
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: black;
+}
+
+
+/* Language */
+.class-selected-lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-selected-lang:before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../Content/Pictures/flaf-nl.png.png);
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+  
+
+
+
 /* navigatie */
 .class-nav{
     display: flex; /* Use flexbox to control layout */
-    background-color: rgba(41, 47, 51, 0.5);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 2.5vw;
     justify-content: space-between; /* Push the children to opposite sides */
@@ -43,16 +109,14 @@ header {
 
 }
 
-nav{
+.class-nav nav{
     display: flex;
-    margin-right: 15vw;
-    margin-left: 17vw;
+    margin-right: 8vw;
     width: 100%;
-    height: auto;
     padding: 0;
 }
 
-nav ul {
+.class-nav nav ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -60,54 +124,44 @@ nav ul {
     align-items: center;
     margin: 0;
     width: 100%;
+    padding-bottom: 1vw;
 }
 
-nav ul li {
-    background-color: rgba(41, 47, 51, 0.9);
+.class-nav nav ul li {
     margin-right: 10px; /* Add margin between list items except for the last one */
     padding: 10px;
-    height: 2vw;
+    height: 1vw;
     padding-top: 2vw;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-
+    margin-bottom: 1.5vw;
 }
 
-nav ul li:hover {
-    background-color: gray;
-    height: 2.5vw;
-    padding-top: 2.5vw;
-}
 
-nav ul li:first-child {
+.class-nav nav ul li:first-child {
+    margin-left: 15vw;
     margin-right: 20vw; /* Remove padding for the last list item */
     border-right: none; /* Remove border for the last list item */
-    visibility: hidden;
 }
 
-nav ul li a{
+.class-nav nav ul li a{
     color: white;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     text-decoration: none;
     font-family: "Raleway", Helvetica, sans-serif;
-}
-
-/* Language */
-.class-language {
-    width: 7vw;
-    height: 6vw;
-    display: flex;
-    justify-content: center;
+    color: rgb(102, 102, 102);
     align-items: center;
-    list-style: none;
 }
 
-.class-language img {
-    width: 2vw;
-    height: auto;
-}
 
-/* Socials */
+
+
+
+
+
+
+
+
 
 
 
