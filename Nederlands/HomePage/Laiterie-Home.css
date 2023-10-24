@@ -1,0 +1,335 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* padding binnen
+margin buiten */
+
+/* kijken niet naar parent
+vw -> width
+vh -> height */
+
+/* kijkt naar font size
+em -> relative to parent
+rem -> route em -> relative to route */
+
+/* font size -> rem */
+
+/* btn font-size -> rem
+btn padding -> em */
+
+/* midjourneyai.ai */
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header{
+    height: 60vh;
+    width: 100%;
+    background-image: url(/Content/Pictures/banner_laiterie_2008.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    position: relative;
+}
+
+nav{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* navigatie */
+.class-navigatie{
+    margin: 0 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.class-navigatie ul{
+    display: flex;
+    justify-content: space-between;
+}
+.class-navigatie ul li{
+    margin-left: 2em;
+}
+.class-navigatie ul li:nth-child(2){
+    margin-left: 5em;
+}
+.class-navigatie ul li a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(44, 37, 37);
+}
+.class-nav-link::after{
+    content: '';
+    width: 0;
+    background-color: #333;
+    display: block;
+    height: 3px;
+    transition: width 0.3s ease;
+}
+.class-nav-link:hover::after{
+    width: 100%;
+}
+
+
+/* language */
+.class-lang-menu{
+    margin-top: 10px;
+    margin-right: 0;
+    position: absolute;
+    top: 2.5%;
+    right: 0;
+    width: 10%;
+}
+.class-lang-menu ul{
+    margin: 0;
+    padding: 0;
+    width: 155px;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.class-lang-menu:hover ul{
+    display: block;
+}
+.class-lang-menu ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.class-lang-menu ul li:first-child{
+    padding-top: 7px;
+}
+.class-lang-menu ul li a{
+    width: 155px;
+    display: block;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+.class-lang-menu ul li a:before{
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    vertical-align: middle;
+
+}
+.class-lang-menu ul li a:hover{
+    background-color: #f2f2f2;
+}
+
+/* selected language */
+.class-selected-lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    width: 130px;
+}
+.class-selected-lang a{
+    font-weight: bold;
+}
+@media (max-width: 1420px) {
+    /* vlaggen */
+    .class-lang-menu{
+        width: 3%;
+    }
+    .current {
+        width: 0px;
+        font-size: 0px;
+    }
+
+    .fr{
+        width: 0px;
+        font-size: 0px;
+    }
+
+    .nl{
+        width: 0px;
+        font-size: 0px;
+    }
+
+    .class-lang-menu ul{
+        width: 50px;
+    }
+
+    .class-lang-menu ul{
+        margin-left: -18px;
+    }
+
+    .class-lang-menu ul li a{
+        width: 49px;
+    }
+}
+.class-selected-lang:before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(/Content/Pictures/flaf-nl.png.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+.nl::before{
+    background-image: url(/Content/Pictures/flaf-nl.png.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+.fr::before{
+    background-image: url(/Content/Pictures/flag-en.png.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+.class-colorline{
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 2em;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* block contact ons in header */
+.class-block-contactons{
+    height: 220px;
+    width: 600px;
+    background-color: rgb(73, 117, 73);
+    margin-right: 12vw;
+    margin-left: 13vw;
+    margin-bottom: -4vw;
+    position: absolute;
+    bottom: 0;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.class-block-contactons h2{
+    color: rgb(255, 255, 255);
+    font-size: 2.8rem;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    z-index: 10;
+    letter-spacing: 1.5px;
+}
+
+.class-block-contactons-button{
+    border: 1.5px solid #fff;
+    border-radius: 17px;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    z-index: 10;
+}
+
+.class-block-contactons-button:hover{
+    color: #fff;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.class-block-contactons-button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #333;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.class-block-contactons-button:hover::before{
+    height: 180%;
+    z-index: -1;
+}
+
+
+main{
+    height: 80vh;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+/* eerste sectie text + foto */
+.section-first-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7vw;
+    padding-bottom: 2vw;
+}
+
+.class-first-content-text{
+    flex: 1;
+    padding-left: 14vw;
+    padding-bottom: 10vw;
+}
+
+.class-first-content-text h3{
+    font-size: 2.5rem;
+    padding-bottom: 1vw;
+}
+
+.class-first-content-text p{
+    font-size: 1.3rem;
+    padding-bottom: 1vw;
+}
+
+.class-first-content-picture{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 17vw;
+    padding-bottom: 10vw;
+}
+
+.class-first-content-picture img{
+    width: 140%;
+    height: auto;
+}
+
+.class-section2-picture{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

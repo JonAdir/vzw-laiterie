@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VZW laiterie</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../HomePage/Laiterie-Home.css">
+
+</head>
+<body>
+    <header>
+
+        <nav>
+          <div class="class-navigatie">
+            <ul>
+              <li><a class="class-nav-link" href="#">Welkom</a></li>
+              <li><a class="class-nav-link" href="#">Ligging</a></li>
+              <li><a class="class-nav-link" href="#">Bezoek</a></li>
+              <li><a class="class-nav-link" href="#">Materiaal</a></li>
+              <li><a class="class-nav-link" href="#">Werken</a></li>
+              <li><a class="class-nav-link" href="#">Prijzen</a></li>
+              <li><a class="class-nav-link" href="#">Boekingen</a></li>
+              <li><a class="class-nav-link" href="#">Historiek</a></li>
+              <li><a class="class-nav-link" href="#">Contact ons</a></li>
+            </ul>
+          </div>
+
+            <div class="class-lang-menu">
+                <div class="class-selected-lang">
+                    <a class="current">Nederlands</a> 
+                </div>
+                <ul>
+                  <li>
+                    <a href="#" class="nl">Nederlands</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="fr">Français</a>
+                  </li>
+                </ul>
+            </div>
+        </nav> 
+        <div class="class-colorline"></div> 
+
+        <div class="class-block-contactons">
+          <h2>VZW The Laiterie</h2>
+          <button class="class-block-contactons-button">Contact ons</button>
+        </div>
+        
+    </header>   
+    
+    <main>
+
+      <section class="section-first-content">
+        <div class="class-first-content-text">
+            <h3>Welkom</h3>
+            <p id="class-Home-firstAlinea"></p>
+            <br>
+            <p id="class-Home-secondAlinea"></p>
+        </div>
+        
+        <div class="class-first-content-picture">
+            <li class="class-section2-picture"><img src="/Content/Pictures/laiterie_voor_2011.jpg" alt="Language picture" href="#"></li>
+        </div>
+
+
+
+    </section>
+        
+        
+    </main>
+
+
+
+
+
+    <footer>
+      <p>VZW Laiterie &copy; 2006-<span id="current-year"></span></p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/Nederlands/HomePage/Text.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- <div class="modal fade" [ngClass]="{'show': showModal,  'hidden' : !showModal }" id="modalKind"  tabindex="-1" role="dialog"></div>
+
+StartSelectieAanpassen() {
+    this.ouders = [];
+    this.geselecteerdeouder = null;
+    this.zoekOuder = "";
+    this.geselecteerdedagtype = 2;
+    this.geselecteerdegratisdag = 2;
+  
+    this.selectie = this.boekingen.filter((b: any) => b.checked == true);
+    const isAllGefactureerd = this.selectie.every((b: any) => b.gefactureerd);
+  
+    if (this.selectie.length > 0) {
+      if (isAllGefactureerd) {
+        this.showModal = true;
+      } else {
+        this.toastr.error('Selecteer alleen gefactureerde boekingen');
+      }
+    } else {
+      this.toastr.error('Selecteer minstens 1 boeking');
+    }
+  } -->
