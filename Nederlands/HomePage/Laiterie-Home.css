@@ -234,7 +234,6 @@ nav{
     align-items: center;
     
 }
-
 .class-block-contactons h2{
     color: rgb(255, 255, 255);
     font-size: 2.8rem;
@@ -243,7 +242,6 @@ nav{
     z-index: 10;
     letter-spacing: 1.5px;
 }
-
 .class-block-contactons-button{
     border: 1.5px solid #fff;
     border-radius: 17px;
@@ -255,7 +253,6 @@ nav{
     margin: 10px;
     z-index: 10;
 }
-
 .class-block-contactons-button:hover{
     color: #fff;
     z-index: 2;
@@ -263,7 +260,6 @@ nav{
     font-size: 1.5rem;
     text-decoration: underline;
 }
-
 .class-block-contactons-button::before{
     content: "";
     position: absolute;
@@ -276,7 +272,6 @@ nav{
     top: 0;
     border-radius: 0 0 50% 50%;
 }
-
 .class-block-contactons-button:hover::before{
     height: 180%;
     z-index: -1;
@@ -284,7 +279,7 @@ nav{
 
 
 main{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     margin: 0 auto;
 
@@ -298,23 +293,19 @@ main{
     padding-top: 7vw;
     padding-bottom: 2vw;
 }
-
 .class-first-content-text{
     flex: 1;
     padding-left: 14vw;
     padding-bottom: 10vw;
 }
-
 .class-first-content-text h3{
     font-size: 2.5rem;
     padding-bottom: 1vw;
 }
-
 .class-first-content-text p{
     font-size: 1.3rem;
     padding-bottom: 1vw;
 }
-
 .class-first-content-picture{
     flex: 1;
     display: flex;
@@ -322,14 +313,97 @@ main{
     padding-right: 17vw;
     padding-bottom: 10vw;
 }
-
 .class-first-content-picture img{
     width: 140%;
     height: auto;
 }
-
 .class-section2-picture{
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+/* tweede sectie text */
+.section-second-content{
+    background-color: rgba(51, 51, 51, 0.2);
+    width: 100%;
+    height: 27vw;
+    margin-top: -15vw;
+    padding-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.class-second-content-firstkader{
+    background-color: rgb(65, 209, 101);
+    width: 40%;
+    height: 300px;
+    margin-left: 17vw;
+
+}
+.class-second-content-firstkader h4{
+    color: white;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+    padding-top: 4vw;
+    padding-left: 2vw;
+}
+.class-second-content-firstkader p{
+    font-size: 1.2rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.class-second-content-secondkader{
+    background-color: rgb(73, 117, 73);
+    width: 20%;
+    height: 300px;
+    margin-right: 17vw;
+ 
+}
+.class-second-content-secondkader h4{
+    color: rgb(65, 209, 101);
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+    padding-top: 2vw;
+    padding-left: 2vw;
+
+}
+.class-second-content-secondkader h3{
+    color: white;
+    font-size: 2.2rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+.class-second-content-secondkader h3::after{
+    content: '';
+    width: 0;
+    background-color: #333;
+    display: block;
+    height: 3px;
+    transition: width 0.3s ease;
+
+}
+.class-second-content-secondkader h3:hover::after{
+    width: 100%;
+    height: 4px;
+}
+
+
+footer{
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+    padding-top: 1.5em;
+
+}
+
+footer p{
+    font-size: 1.2rem;
 }
